@@ -22,7 +22,7 @@ const create = async (name: string) => {
 const updateById = async (id: number, entity: Author) => {
   console.log("updateById");
   const entityFound = await getById(id);
-  if (entityFound && entityFound.length < 0) { 
+  if (entityFound && entityFound.length > 0) { 
     console.log("entityFound");
      const [result] = await pool.promise().query("UPDATE authors SET name = ? WHERE id = ?", [entity.name, id]);
    

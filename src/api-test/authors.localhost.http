@@ -2,9 +2,9 @@
 # Get all authors
 GET http://localhost:3000/api/authors HTTP/1.1
 
-###
+### 
 # Get a existing author by id
-GET http://localhost:3000/api/authors/1 HTTP/1.1
+GET http://localhost:3000/api/authors/5 HTTP/1.1
 
 ###
 # Create a new author
@@ -17,7 +17,7 @@ content-type: application/json
 
 ###
 # Update a existing author
-PUT http://localhost:3000/api/authors/1 HTTP/1.1
+PUT http://localhost:3000/api/authors/5 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,4 +26,4 @@ content-type: application/json
 
 ###
 # Delete a existing author
-DELETE http://localhost:3000/api/authors/1 HTTP/1.1
+DELETE http://localhost:3000/api/authors/5 HTTP/1.1
